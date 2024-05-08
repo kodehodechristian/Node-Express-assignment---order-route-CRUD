@@ -45,3 +45,10 @@
 07.05.2024	13:54:23	72a30ec4-3d6c-452c-bafe-dc8d7e9ba4b3	POST	/api/signup	400	ERROR: "password" should contain at least 2 special character ---ERROR: "password" should contain at least 2 uppercase character ---ERROR: "password" should contain at least 2 numeric character ---
 07.05.2024	13:54:45	b3594cec-b57e-4b04-bbb5-75540260e8be	POST	/api/signup	400	ERROR: "password" should contain at least 2 special character ---ERROR: "password" should contain at least 2 numeric character ---
 07.05.2024	13:54:51	4277cfea-f915-4770-a9cf-c7c954b97e64	POST	/api/signup	400	ERROR: "password" should contain at least 2 numeric character ---
+08.05.2024	11:35:59	dc5bcab8-0c84-4c51-bcf7-8a45c0c21dd9	GET	/orders	404	Not found!
+08.05.2024	12:03:46	e93cbd43-8f3a-4479-b488-d8acc4ec5fda	POST	/orders	404	Not found!
+08.05.2024	12:03:53	b124915d-ce80-41f0-a64f-f417b545d21e	POST	/orders	404	Not found!
+08.05.2024	12:04:39	a241b0fb-4243-4487-b1ef-08e6b030a8b9	GET	/products	404	Not found!
+08.05.2024	12:04:52	4332da17-1b15-4549-8635-04a7438a3c3d	GET	/products	404	Not found!
+08.05.2024	12:10:49	9b0d4b79-8da5-41f0-afa4-c8decd189d12	GET	/api/1	404	Not found!
+08.05.2024	13:28:26	b2fb5b6d-ca45-494d-a771-caa8c504a3a5	GET	/api/orders/3	404	Order with id 3 doesn't exist.

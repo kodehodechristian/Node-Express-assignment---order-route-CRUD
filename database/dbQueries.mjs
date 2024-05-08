@@ -53,6 +53,25 @@ const loginUser = (email) => {
   return loginUserQuery.get(email);
 };
 
+const getOrders = () => db.prepare("SELECT * FROM orders").all();
+
+const getOrder = (id) => {
+  const getOrderQuery = db.prepare("SELECT * FROM orders WHERE id = ?");
+  return getOrderQuery.get(id);
+};
+
+const addOrder = ({ customer_email, product }) => {
+  const addOrderQuery = db.prepare(
+    "INSERT INTO orders (customer_email, product) VALUES(?, ?)"
+  );
+  return addOrderQuery.run(customer_email, product);
+};
+
+const deleteOrder = (id) => {
+  const deleteOrderQuery = db.prepare("DELETE FROM orders WHERE id = ?");
+  return deleteOrderQuery.run(id);
+};
+
 export {
   getProducts,
   getCategory,
@@ -62,4 +81,8 @@ export {
   updateProduct,
   signupUser,
   loginUser,
+  getOrders,
+  getOrder,
+  addOrder,
+  deleteOrder,
 };

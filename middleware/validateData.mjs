@@ -1,4 +1,4 @@
-import { userSchema, productSchema } from "../schema/schema.mjs";
+import { userSchema, productSchema, orderSchema } from "../schema/schema.mjs";
 import { ReqError } from "./errorHandler.mjs";
 
 const validateData = (schema) => (req, res, next) => {
@@ -18,5 +18,6 @@ const validateData = (schema) => (req, res, next) => {
 
 const validateUserData = validateData(userSchema);
 const validateProductData = validateData(productSchema);
+const validateOrderData = validateData(orderSchema);
 
-export { validateUserData, validateProductData };
+export { validateUserData, validateProductData, validateOrderData };

@@ -22,4 +22,9 @@ const productSchema = Joi.object({
   price: Joi.number().precision(2).prefs({ convert: false }).min(0).required(),
 });
 
-export { userSchema, productSchema };
+const orderSchema = Joi.object({
+  customer_email: Joi.string().email().required(),
+  product: Joi.string().required(),
+});
+
+export { userSchema, productSchema, orderSchema };
